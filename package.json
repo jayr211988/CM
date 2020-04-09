@@ -1,0 +1,65 @@
+{
+  "name": "react-antd-starter-kit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.26.15",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.12.0",
+    "customize-cra": "^0.4.1",
+    "env-cmd": "^9.0.3",
+    "fe-common": "file:src/common",
+    "fe-components": "file:src/components",
+    "fe-constants": "file:src/constants",
+    "fe-containers": "file:src/containers",
+    "fe-context": "file:src/context",
+    "fe-services": "file:src/services",
+    "fe-utils": "file:src/utils",
+    "formik": "1.5.2",
+    "js-file-download": "^0.4.8",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "moment": "^2.24.0",
+    "query-string": "6.2.0",
+    "react": "^16.13.1",
+    "react-app-rewired": "^2.1.3",
+    "react-dom": "^16.13.1",
+    "react-organizational-chart": "^1.0.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "styled-components": "^4.3.2",
+    "yup": "^0.27.0",
+    "zxcvbn": "^4.4.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build:development": "env-cmd -f .env.development react-app-rewired build && rm -rf development_build && mv build development_build",
+    "build:qa": "env-cmd -f .env.local react-app-rewired build && rm -rf qa_build && mv build qa_build",
+    "build:qadev": "env-cmd -f .env.test react-app-rewired build && rm -rf qa_build && mv build qa_build",
+    "build:staging": "env-cmd -f .env.staging react-app-rewired build && rm -rf staging_build && mv build staging_build",
+    "build:production": "env-cmd -f .env.production react-app-rewired build && rm -rf production_build && mv build production_build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4"
+  }
+}
