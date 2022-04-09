@@ -19,7 +19,7 @@
     "js-file-download": "^0.4.8",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "query-string": "6.2.0",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.3",
